@@ -4,13 +4,13 @@ This repository is part of a [SAP Blog](https://blogs.sap.com/2023/05/15/walkthr
 
 ## Content
 In this repository you will find:
-- in [/Datasphere](./tree/main/Datasphere):
+- in [/Datasphere](Datasphere):
     - Sample SQL statements to create database tables
-- in [/Cloud Integration](./tree/main/Cloud%20Integration):
+- in [/Cloud Integration](Cloud%20Integration):
     - The pre-built integration package to be imported in your integration tenant
     - CloudEventsSchema.xsd to be used in the XML Validator step
     - Mapping XSD schemas to be used in the Message Mapping steps
-- in [/Sample data](./tree/main/Sample%20data):
+- in [/Sample data](Sample%20data):
     - Sample JSON event payloads you can send via the HTTP endpoint or via the event broker
 
 ## Using the prebuilt integration package
