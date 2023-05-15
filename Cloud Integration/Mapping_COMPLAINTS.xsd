@@ -1,0 +1,51 @@
+<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cloudevent">
+        <xs:complexType>
+            <xs:all>
+                <xs:element type="xs:string" name="id"/>
+                <xs:element type="xs:string" name="source"/>
+                <xs:element type="xs:string" name="type"/>
+                <xs:element type="xs:string" name="specversion"/>
+                <xs:element type="xs:string" name="eventtypeversion" minOccurs="0"/>
+                <xs:element type="xs:string" name="datacontenttype" minOccurs="0"/>
+                <xs:element type="EventDataStructure" name="data" />
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="hana">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="StoreEvent">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dbTableName">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="table" />
+                                        <xs:element type="HANADataStructure" name="access" />
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="action" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="EventDataStructure">
+        <xs:all>
+            <xs:element type="xs:string" name="id" minOccurs="0"/>
+            <xs:element type="xs:string" name="customer" minOccurs="0"/>
+            <xs:element type="xs:string" name="complaint" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="HANADataStructure">
+        <xs:all>
+            <xs:element type="xs:string" name="id" minOccurs="0"/>
+            <xs:element type="xs:string" name="customer" minOccurs="0"/>
+            <xs:element type="xs:string" name="complaint" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>

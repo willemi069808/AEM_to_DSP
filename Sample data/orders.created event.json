@@ -1,0 +1,15 @@
+{
+    "type": "sap.demo.stores.ce.sales.orders.created.v1",
+    "source": "sap/demo/stores",
+    "eventtypeversion": "v1",
+    "specversion": "1.0",
+    "id": "26ac236a-6551-414f-9a9e-94fb150f78eb",
+    "data": {
+        "id": "ORD-15-223",
+        "customer": "Best Run inc.",
+        "product": "H100.E9 Compressor Valve",
+        "quantity": 2,
+        "amount": 285.99
+    },
+    "datacontenttype": "application/json"
+}
