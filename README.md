@@ -1,6 +1,6 @@
 # Walkthrough: Capturing Business Events in SAP Datasphere using SAP Integration Suite
 
-This repository is part of a [SAP Blog](https://blogs.sap.com/2023/05/15/walkthrough-capturing-business-events-in-sap-datasphere-using-sap-integration-suite/). The blog explores how to connect Advanced Event Mesh with SAP Datasphere.
+This repository is part of a [SAP Blog](https://blogs.sap.com/2023/05/18/walkthrough-capturing-business-events-in-sap-datasphere-using-sap-integration-suite/). The blog explores how to connect Advanced Event Mesh with SAP Datasphere.
 
 ## Content
 In this repository you will find:
